@@ -5,12 +5,12 @@ LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 
 LOCAL_CERTIFICATE := platform
 
-LOCAL_PACKAGE_NAME := guamnaMotoActionsOverlay
+LOCAL_PACKAGE_NAME := devonMotoActionsOverlay
 
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res
 
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/guamnaMotoActionsOverlay
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/devonMotoActionsOverlay
 
 LOCAL_PRIVATE_PLATFORM_APIS := true
 

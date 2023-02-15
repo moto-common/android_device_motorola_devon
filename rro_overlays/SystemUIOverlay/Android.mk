@@ -5,12 +5,12 @@ LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 
 LOCAL_CERTIFICATE := platform
 
-LOCAL_PACKAGE_NAME := guamnaSystemUIOverlay
+LOCAL_PACKAGE_NAME := devonSystemUIOverlay
 
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res
 
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/guamnaSystemUIOverlay
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/devonSystemUIOverlay
 
 LOCAL_PRIVATE_PLATFORM_APIS := true
 

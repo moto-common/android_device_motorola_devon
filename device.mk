@@ -13,11 +13,11 @@
 # limitations under the License.
 
 # Device path
-DEVICE_PATH := device/motorola/guamna/rootdir
+DEVICE_PATH := device/motorola/devon/rootdir
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    device/motorola/guamna-kernel/Image.gz:kernel
+    device/motorola/devon-kernel/Image.gz:kernel
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
@@ -28,17 +28,15 @@ PRODUCT_COPY_FILES += \
 
 # Device Init
 PRODUCT_PACKAGES += \
-    fstab.guamna \
-    ramdisk-fstab.guamna \
-    init.recovery.qcom.rc \
-    init.guamna.rc \
-    init.guamna.sh
+    fstab.devon \
+    ramdisk-fstab.devon \
+    init.recovery.qcom.rc
 
 # Overlays
 PRODUCT_PACKAGES += \
-   guamnaFrameworkOverlay \
-   guamnaMotoActionsOverlay \
-   guamnaSystemUIOverlay
+   devonFrameworkOverlay \
+   devonMotoActionsOverlay \
+   devonSystemUIOverlay
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
@@ -50,14 +48,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Fingerprint
 TARGET_USES_CHIPONE_FINGERPRINT := true
 TARGET_USES_FPC_FINGERPRINT := true
-TARGET_USES_GOODIX_FINGERPRINT := true
-
-# Camera
-PRODUCT_PACKAGES += \
-    com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)
 
 # include board vendor blobs
-$(call inherit-product-if-exists, vendor/motorola/guamna/guamna-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/devon/devon-vendor.mk)

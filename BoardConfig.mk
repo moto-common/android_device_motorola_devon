@@ -14,9 +14,7 @@
 
 include device/motorola/sm4250-common/PlatformConfig.mk
 
-DEVICE_PATH := device/motorola/guamna
-
-TARGET_BOOTLOADER_BOARD_NAME := guamna
+TARGET_BOOTLOADER_BOARD_NAME := devon
 
 # Platform
 PRODUCT_PLATFORM := bengal
@@ -36,6 +34,3 @@ BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     product \
     vendor
-
-# SEPolicy
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy

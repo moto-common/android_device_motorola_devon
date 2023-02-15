@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=guamna
+DEVICE=devon
 VENDOR=motorola
 
 # Load extract utilities and do some sanity checks.
